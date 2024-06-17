@@ -1,13 +1,13 @@
-## Projeto de Simulação de Recarga de Celular com Spring Boot e RabbitMQ
-# Visão Geral
+# Projeto de Simulação de Recarga de Celular com Spring Boot e RabbitMQ
+## Visão Geral
 Este projeto simula um sistema de recarga de celular integrando uma API REST criada com Spring Boot e mensageria com RabbitMQ. O fluxo completo abrange desde a recepção de uma solicitação de recarga via Postman até o processamento da mesma através de serviços de mensageria.
 
-## Fluxo do Sistema
-# Recepção da Solicitação:
+# Fluxo do Sistema
+## Recepção da Solicitação:
 
 O usuário envia uma solicitação de recarga via Postman, fornecendo os detalhes necessários como o valor da recarga e o número do telefone em formato JSON.
 
-# Processamento pelo Controller:
+## Processamento pelo Controller:
 
 O RechargeController recebe a solicitação, transforma os dados de JSON para um DTO (Data Transfer Object) que é então passado para o serviço de processamento.
 Integração com RabbitMQ:
@@ -23,8 +23,8 @@ RabbitMQ: Para gerenciar a comunicação assíncrona entre diferentes partes do 
 H2 Database: Banco de dados em memória para fácil teste e demonstração.
 Hibernate: Para ORM e interação com o banco de dados.
 
-## Como Executar
-# Para testar este projeto:
+# Como Executar
+## Para testar este projeto:
 
 - Clone o repositório.
 - Configure o RabbitMQ local ou use uma instância cloud.
